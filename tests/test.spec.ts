@@ -12,4 +12,9 @@ test('index page has expected h1', async ({ page }) => {
 
   const buttonTwo = page.getByRole('button', { name: /changed/i })
   await expect(buttonTwo).toBeVisible()
+
+  const input = page.getByRole('textbox', { name: /name/i })
+  await input.type('Cesar', { delay: 100 })
+
+  await expect(input).toHaveValue('Cesar')
 })

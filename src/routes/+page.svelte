@@ -8,4 +8,8 @@
 <div class="container mx-auto flex h-full items-center justify-center">
   <h1>Let's get cracking bones!</h1>
   <Button />
+  <label>
+    <span>Name</span>
+    <input type="text" class="text-slate-800" />
+  </label>
 </div>

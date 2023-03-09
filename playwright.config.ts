@@ -11,7 +11,7 @@ import { defineConfig, devices } from '@playwright/test'
  */
 export default defineConfig({
   testDir: 'tests',
-  timeout: 30 * 1000, // 30 secs
+  timeout: 10 * 1000, // 5 secs
   expect: {
     timeout: 5000,
   },
@@ -21,7 +21,7 @@ export default defineConfig({
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  // reporter: 'html',
+  reporter: 'html',
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Maximum time each action such as `click()` can take. Defaults to 0 (no limit). */
@@ -31,6 +31,9 @@ export default defineConfig({
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on',
     video: 'on',
+    launchOptions: {
+      slowMo: process.env.CI ? 100 : undefined,
+    },
   },
 
   /* Configure projects for major browsers */

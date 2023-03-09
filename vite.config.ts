@@ -13,7 +13,7 @@ export default defineConfig({
     include: ['src/**/*.test.{js,ts}'],
     coverage: {
       all: true,
-      reporter: ['text', 'html'],
+      reporter: ['text'],
       src: ['./src'],
     },
     // Exclude playwright tests folder
