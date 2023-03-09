@@ -13,8 +13,10 @@ jobs:
     - uses: actions/setup-node@v3
       with:
         node-version: 16
+    - name: Create package-lock.json
+      run: npm i --package-lock-only
     - name: Install dependencies
-      run: pnpm ci
+      run: npm ci
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps
     - name: Run Playwright tests
