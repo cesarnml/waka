@@ -4,4 +4,5 @@
   import '../app.postcss'
 </script>
 
+<nav aria-label="main">test</nav>
 <slot />
