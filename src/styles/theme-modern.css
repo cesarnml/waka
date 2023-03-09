@@ -1,0 +1,127 @@
+/* https://fonts.google.com/specimen/Quicksand?query=Quicksand */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* =~= Theme Properties =~= */
+  --theme-font-family-base: 'Quicksand', system-ui, sans-serif;
+  --theme-font-family-heading: 'Quicksand', system-ui, sans-serif;
+  --theme-font-color-base: var(--color-surface-900);
+  --theme-font-color-dark: var(--color-tertiary-50);
+  --theme-rounded-base: 8px;
+  --theme-rounded-container: 8px;
+  --theme-border-base: 3px;
+  /* =~= Theme On-X Colors =~= */
+  --on-primary: 255 255 255;
+  --on-secondary: 255 255 255;
+  --on-tertiary: 255 255 255;
+  --on-success: 255 255 255;
+  --on-warning: 255 255 255;
+  --on-error: 255 255 255;
+  --on-surface: 255 255 255;
+  /* =~= Theme Colors  =~= */
+  /* primary | #c4367d */
+  --color-primary-50: 246 225 236; /* ⬅ #f6e1ec */
+  --color-primary-100: 243 215 229; /* ⬅ #f3d7e5 */
+  --color-primary-200: 240 205 223; /* ⬅ #f0cddf */
+  --color-primary-300: 231 175 203; /* ⬅ #e7afcb */
+  --color-primary-400: 214 114 164; /* ⬅ #d672a4 */
+  --color-primary-500: 196 54 125; /* ⬅ #c4367d */
+  --color-primary-600: 176 49 113; /* ⬅ #b03171 */
+  --color-primary-700: 147 41 94; /* ⬅ #93295e */
+  --color-primary-800: 118 32 75; /* ⬅ #76204b */
+  --color-primary-900: 96 26 61; /* ⬅ #601a3d */
+  /* secondary | #017d93 */
+  --color-secondary-50: 217 236 239; /* ⬅ #d9ecef */
+  --color-secondary-100: 204 229 233; /* ⬅ #cce5e9 */
+  --color-secondary-200: 192 223 228; /* ⬅ #c0dfe4 */
+  --color-secondary-300: 153 203 212; /* ⬅ #99cbd4 */
+  --color-secondary-400: 77 164 179; /* ⬅ #4da4b3 */
+  --color-secondary-500: 1 125 147; /* ⬅ #017d93 */
+  --color-secondary-600: 1 113 132; /* ⬅ #017184 */
+  --color-secondary-700: 1 94 110; /* ⬅ #015e6e */
+  --color-secondary-800: 1 75 88; /* ⬅ #014b58 */
+  --color-secondary-900: 0 61 72; /* ⬅ #003d48 */
+  /* tertiary | #0a7569 */
+  --color-tertiary-50: 218 234 233; /* ⬅ #daeae9 */
+  --color-tertiary-100: 206 227 225; /* ⬅ #cee3e1 */
+  --color-tertiary-200: 194 221 218; /* ⬅ #c2ddda */
+  --color-tertiary-300: 157 200 195; /* ⬅ #9dc8c3 */
+  --color-tertiary-400: 84 158 150; /* ⬅ #549e96 */
+  --color-tertiary-500: 10 117 105; /* ⬅ #0a7569 */
+  --color-tertiary-600: 9 105 95; /* ⬅ #09695f */
+  --color-tertiary-700: 8 88 79; /* ⬅ #08584f */
+  --color-tertiary-800: 6 70 63; /* ⬅ #06463f */
+  --color-tertiary-900: 5 57 51; /* ⬅ #053933 */
+  /* success | #518307 */
+  --color-success-50: 229 236 218; /* ⬅ #e5ecda */
+  --color-success-100: 220 230 205; /* ⬅ #dce6cd */
+  --color-success-200: 212 224 193; /* ⬅ #d4e0c1 */
+  --color-success-300: 185 205 156; /* ⬅ #b9cd9c */
+  --color-success-400: 133 168 81; /* ⬅ #85a851 */
+  --color-success-500: 81 131 7; /* ⬅ #518307 */
+  --color-success-600: 73 118 6; /* ⬅ #497606 */
+  --color-success-700: 61 98 5; /* ⬅ #3d6205 */
+  --color-success-800: 49 79 4; /* ⬅ #314f04 */
+  --color-success-900: 40 64 3; /* ⬅ #284003 */
+  /* warning | #957104 */
+  --color-warning-50: 239 234 217; /* ⬅ #efead9 */
+  --color-warning-100: 234 227 205; /* ⬅ #eae3cd */
+  --color-warning-200: 229 220 192; /* ⬅ #e5dcc0 */
+  --color-warning-300: 213 198 155; /* ⬅ #d5c69b */
+  --color-warning-400: 181 156 79; /* ⬅ #b59c4f */
+  --color-warning-500: 149 113 4; /* ⬅ #957104 */
+  --color-warning-600: 134 102 4; /* ⬅ #866604 */
+  --color-warning-700: 112 85 3; /* ⬅ #705503 */
+  --color-warning-800: 89 68 2; /* ⬅ #594402 */
+  --color-warning-900: 73 55 2; /* ⬅ #493702 */
+  /* error | #ce3636 */
+  --color-error-50: 248 225 225; /* ⬅ #f8e1e1 */
+  --color-error-100: 245 215 215; /* ⬅ #f5d7d7 */
+  --color-error-200: 243 205 205; /* ⬅ #f3cdcd */
+  --color-error-300: 235 175 175; /* ⬅ #ebafaf */
+  --color-error-400: 221 114 114; /* ⬅ #dd7272 */
+  --color-error-500: 206 54 54; /* ⬅ #ce3636 */
+  --color-error-600: 185 49 49; /* ⬅ #b93131 */
+  --color-error-700: 155 41 41; /* ⬅ #9b2929 */
+  --color-error-800: 124 32 32; /* ⬅ #7c2020 */
+  --color-error-900: 101 26 26; /* ⬅ #651a1a */
+  /* surface | #5d5fdf */
+  --color-surface-50: 231 231 250; /* ⬅ #e7e7fa */
+  --color-surface-100: 223 223 249; /* ⬅ #dfdff9 */
+  --color-surface-200: 215 215 247; /* ⬅ #d7d7f7 */
+  --color-surface-300: 190 191 242; /* ⬅ #bebff2 */
+  --color-surface-400: 142 143 233; /* ⬅ #8e8fe9 */
+  --color-surface-500: 93 95 223; /* ⬅ #5d5fdf */
+  --color-surface-600: 84 86 201; /* ⬅ #5456c9 */
+  --color-surface-700: 70 71 167; /* ⬅ #4647a7 */
+  --color-surface-800: 56 57 134; /* ⬅ #383986 */
+  --color-surface-900: 46 47 109; /* ⬅ #2e2f6d */
+}
+
+[data-theme='modern'] h1,
+[data-theme='modern'] h2,
+[data-theme='modern'] h3,
+[data-theme='modern'] h4,
+[data-theme='modern'] h5,
+[data-theme='modern'] h6,
+[data-theme='modern'] a,
+[data-theme='modern'] button {
+  font-weight: bold;
+}
+
+/* Applied to body with `<body data-theme="modern">` */
+/* Created with: https://csshero.org/mesher/ */
+[data-theme='modern'] {
+  /* prettier-ignore */
+  background-image:
+		radial-gradient(at 76% 0%, hsla(189,100%,56%,0.36) 0px, transparent 50%),
+		radial-gradient(at 1% 0%, hsla(340,100%,76%,0.26) 0px, transparent 50%),
+		radial-gradient(at 20% 100%, hsla(241,100%,70%,0.47) 0px, transparent 50%);
+}
+.dark [data-theme='modern'] {
+  /* prettier-ignore */
+  background-image:
+		radial-gradient(at 76% 0%, hsla(189,100%,56%,0.20) 0px, transparent 50%),
+		radial-gradient(at 1% 0%, hsla(340,100%,76%,0.15) 0px, transparent 50%),
+		radial-gradient(at 20% 100%, hsla(241,100%,70%,0.30) 0px, transparent 50%);
+}
